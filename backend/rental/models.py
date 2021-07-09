@@ -8,6 +8,12 @@ class Rental(models.Model):
     pub_date = models.DateField()
     estate = models.CharField(max_length=100)
 
+    class Meta:
+        ordering = ['-pub_date']
+
+    def __str__(self):
+        return self.title
+
 class Category(models.Model):
     home = models.ManyToManyField(Rental)
 
