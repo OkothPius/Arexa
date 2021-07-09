@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from django.https import HttpResponse
+from django.views.generics import ListView
 
-def home(request):
-    return HttpResponse("Hey There")
+
+class HomeListView(ListView):
+    
