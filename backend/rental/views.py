@@ -3,6 +3,8 @@ from django.utils import timezone
 from django.views.generic import ListView
 from .models import Rental
 
+def home(request):
+    return render(request, 'rental/base.html')
 
 class HomeListView(ListView):
 
