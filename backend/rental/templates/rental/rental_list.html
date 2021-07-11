@@ -1,20 +1,12 @@
-{% load static %}
+{% block content %}
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Arexa</title>
-    <link rel="stylesheet" href="{% static 'rental/master.css' %}">
-  </head>
-  <body>
-    <h3>Apartments Available</h3>
-    <ul>
-      {% for house in object_list %}
-        <li>{{ house.pub_date|date }} - {{ house.title }}</li>
-      {% empty %}
-        <li>No Apartments yet!</li>
-      {% endfor %}
-    </ul>
-  </body>
-</html>
+  <h3>Apartments Available</h3>
+  <ul>
+    {% for house in object_list %}
+      <li>{{ house.pub_date|date }} - {{ house.title }}</li>
+    {% empty %}
+      <li>No Apartments yet!</li>
+    {% endfor %}
+  </ul>
+  
+{% endblock content %}
