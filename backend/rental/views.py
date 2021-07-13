@@ -6,6 +6,7 @@ from .models import Rental
 def home(request):
     return render(request, 'rental/base.html')
 
+
 class HomeListView(ListView):
 
     models = Rental
