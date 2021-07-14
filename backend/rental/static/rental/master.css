@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
 /* Navbar Section */
 li a {
   color: #333333;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 li a:hover {
@@ -37,7 +41,12 @@ nav .right {
   float: left;
 }
 
-.container img {
+.container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container-fluid img {
   height: 500px;
   width: 100%;
   object-fit: cover;
@@ -81,4 +90,18 @@ form.example input[type=search] {
 
 form.example {
   display: inline-block;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  background-color: #0e2f44;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-top: 20px;
+  color: #ffffff;
+}
+
+.footer h5 {
 }
