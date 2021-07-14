@@ -36,3 +36,10 @@ nav .right {
 .right li {
   float: left;
 }
+
+.container img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
