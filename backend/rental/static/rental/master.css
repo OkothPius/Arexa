@@ -66,7 +66,7 @@ nav .right {
   padding-bottom: 25%;
 }
 
-form.example input[type=search] {
+/* form.example input[type=search] {
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
@@ -75,7 +75,7 @@ form.example input[type=search] {
   width: 50%;
   height: 30%;
   background: #f1f1f1;
-}
+} */
 
 .search form {
   position: absolute;
@@ -104,4 +104,59 @@ form.example {
 }
 
 .footer h5 {
+}
+
+/* Search Bar */
+h1 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #333333;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+  padding-bottom: 20%;
+}
+
+input {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+
+input[type=text]
+{
+  width: 350px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 25px;
+  border-radius: 25px 0 0 25px;
+}
+
+input[type=submit]
+{
+  position: relative;
+  left: -5px;
+  border-radius: 0 25px 25px 0;
+  width: 100px;
+  height: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: #133337;
+  color: #ffffff;
+}
+
+input[type=submit]:hover {
+  background: #0a75ad;
 }
