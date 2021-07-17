@@ -4,10 +4,12 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>HomePage</title>
+    <title>Arexa Rentals</title>
     <!-- CSS only -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'rental/master.css' %}">
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+      href="{% static 'rental/master.css' %}">
   </head>
   <body>
     <main class="content">
@@ -32,13 +34,11 @@
     <div class="container-fluid">
       <img src="/static/rental/house.jpg" alt="img">
 
-      <div class="flair">
+      <div class="box">
         <h1>Simply Smarter Home Search</h1>
-      </div>
-
-      <div class="search">
         <form class="example" action="index.html" method="post">
-          <input type="search" name="" placeholder="Search by Location" value="">
+          <input type="text" name="" placeholder="Search by Location" value="">
+          <input type="submit" name="" value="Search">
         </form>
       </div>
 
