@@ -5,12 +5,12 @@ body {
 /* Navbar Section */
 li a {
   color: #333333;
-  text-decoration: none;
   font-size: 20px;
 }
 
 li a:hover {
   color: #407294;
+  text-decoration: none;
 }
 
 nav {
@@ -110,7 +110,7 @@ form.example {
 h1 {
   margin: 0 0 10px;
   padding: 0;
-  color: #333333;
+  color: #ffffff;
   font-size: 30px;
   text-align: center;
   font-weight: bold;
@@ -146,17 +146,26 @@ input[type=text]
 input[type=submit]
 {
   position: relative;
-  left: -5px;
+  left: -2px;
   border-radius: 0 25px 25px 0;
   width: 100px;
   height: 50px;
   outline: none;
   border: none;
   cursor: pointer;
-  background: #133337;
+  background: #0a75ad;
   color: #ffffff;
 }
 
 input[type=submit]:hover {
-  background: #0a75ad;
+  background: #468499;
+}
+
+/* Logo */
+#logo img {
+  display: block;
+  width: 100px;
+  height: 60px;
+  margin: auto;
+
 }
