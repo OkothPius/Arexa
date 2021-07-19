@@ -1,18 +1,17 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Arexa Rentals</title>
-    <!-- CSS only -->
-    <link rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css"
-      href="{% static 'rental/master.css' %}">
-  </head>
-  <body>
-    <main class="content">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'rental/master.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>Rental</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <main class="content">
       <nav>
         <ul class="right">
           <li><a href="#">Buy</a></li>
@@ -37,9 +36,9 @@
 
     </main>
 
-    <div class="container-fluid">
-      <img src="/static/rental/hse.jpg" alt="img">
-
+    <!-- Display Image -->
+    <img src="/static/rental/hse.jpg" alt="img">
+    <div class="container">
       <div class="box">
         <h1>Simply Smarter Home Search</h1>
         <form class="example" action="index.html" method="post">
@@ -50,52 +49,12 @@
 
     </div>
 
-    <div class="container">
-      <div class="card-deck">
-      <div class="card">
-        <img class="card-img-top" src="/static/rental/rental.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="/static/rental/rental.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="/static/rental/rental.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-
-
-      <div id="main_content">
-        {% block content %} {% endblock %}
-      </div>
-
-    </div>
-
+    <!-- Footer -->
     <footer>
   		<div class="footer">
-  		  <h5>Copyright &copy; 2021. TheOruko.Inc All Rights Reserved</h5>
+  		  <h5>Copyright &copy; 2021. All Rights Reserved</h5>
   		</div>
 	 </footer>
-
-
-
-    <!-- JavaScript Bundle with Popper -->
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
-    </script>
-  </body>
+  
+</body>
 </html>
