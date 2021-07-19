@@ -33,12 +33,15 @@ p {
   margin: 10px 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 /* Navbar Section */
 li a {
   color: #333333;
   font-size: 15px;
-  text-decoration: none;
 }
 
 li a:hover {
@@ -83,8 +86,11 @@ nav .right {
 }
 
 img {
-  height: 500px;
   width: 100%;
+}
+
+.display img {
+  height: 500px;
   object-fit: cover;
   object-position: 50% 50%;
   padding: 0;
@@ -127,6 +133,7 @@ h1 {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
+  padding-top: 30px;
 }
 
 .box {
@@ -172,6 +179,20 @@ input[type=submit]
 
 input[type=submit]:hover {
   background: #468499;
+}
+
+/* Info Section */
+.card h1 {
+  color: #333333;
+}
+
+
+.info .card {
+  text-align: center;
+}
+
+section.info.bg-light {
+    overflow: auto;
 }
 
 /* Footer */

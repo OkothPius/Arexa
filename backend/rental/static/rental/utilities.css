@@ -1,6 +1,6 @@
 /* Utilities */
 .container {
-  max-width: 1800px;
+  max-width: 1100px;
   margin: 0 auto;
   overflow: auto;
   padding: 0 40px;
@@ -83,6 +83,13 @@
 
 .text-light {
 	color: var(--light-color);
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
 
 .grid {
