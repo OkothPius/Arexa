@@ -1,86 +1,107 @@
 [
   {
     "location": "Gathingu Close Nairobi, Langata, Nairobi",
-    "rent": "KSh 17 500"
+    "rent": "KSh 17 500",
+    "house_detail": "This charming 1 bedroom apartment on the second floor is situated in a well maintained apartment block with adequate supply of wa."
   },
   {
     "location": "Mpaka Rd Nairobi, Westlands, Nairobi",
-    "rent": "KSh 50 000"
-  },
-  {
-    "location": "",
-    "rent": "KSh 50 000"
-  },
-  {
-    "location": "Karen, Nairobi",
-    "rent": "KSh 20 000"
-  },
-  {
-    "location": "Embakasi, Nairobi",
-    "rent": "KSh 35 000"
-  },
-  {
-    "location": "Ruaka, Nairobi",
-    "rent": "KSh 43 000"
-  },
-  {
-    "location": "Kilimani, Nairobi",
-    "rent": "KSh 8 000"
-  },
-  {
-    "location": "Langata, Nairobi",
-    "rent": "KSh 37 000"
+    "rent": "KSh 50 000",
+    "house_detail": "FURNISHED OFFICE SPACE TO LET IN WESTLANDS\r \r 250 sq ft furnished office space to let in Westlands, off Mpaka road."
   },
   {
     "location": "Homex Luxury Apartments, Ruaka, Nairobi",
-    "rent": "KSh 38 000"
+    "rent": "KSh 38 000",
+    "house_detail": "This tastefully designed 2 bedroom apartment is located in the serene environment of Ndenderu Limuru Road."
+  },
+  {
+    "location": "",
+    "rent": "KSh 50 000",
+    "house_detail": "This is a stylish residence complex consisting of 3 apartment towers (180 apartments) and 40 town houses."
+  },
+  {
+    "location": "Karen, Nairobi",
+    "rent": "KSh 20 000",
+    "house_detail": "Bedsitter to let in Bomas."
+  },
+  {
+    "location": "Embakasi, Nairobi",
+    "rent": "KSh 35 000",
+    "house_detail": "Property Description\r This is a spacious 3Bedroom apartment situated at Embakasi."
+  },
+  {
+    "location": "Ruaka, Nairobi",
+    "rent": "KSh 43 000",
+    "house_detail": "This impeccably 2 bedroom apartment is located in the heart of Ruaka."
+  },
+  {
+    "location": "Kilimani, Nairobi",
+    "rent": "KSh 8 000",
+    "house_detail": "Fully furnished 2 bedroom apartment to let in Kilimani."
+  },
+  {
+    "location": "Langata, Nairobi",
+    "rent": "KSh 37 000",
+    "house_detail": "Master ensuite, 2 bedroom apartment to let langata \r In a gated community, washing area, balcony, ample parking, secure, water 24."
+  },
+  {
+    "location": "Homex Luxury Apartments, Ruaka, Nairobi",
+    "rent": "KSh 38 000",
+    "house_detail": "This tastefully designed 2 bedroom apartment is located in the serene environment of Ndenderu Limuru Road."
   },
   {
     "location": "Karen Karen, Karen, Nairobi",
-    "rent": "KSh 40 000"
+    "rent": "KSh 40 000",
+    "house_detail": "Features\r spacious kitchen\r well lit living room\r master ensuite\r close to amenities like police station, schools and shopping ma."
   },
   {
     "location": "Fair Acres Road Nairobi, Karen, Nairobi",
-    "rent": "KSh 35 000"
+    "rent": "KSh 35 000",
+    "house_detail": "This are newly built apartments in a lovely and serene area in Karen."
   },
   {
     "location": "Mombasa Road Nairobi, Mombasa Rd, Nairobi",
-    "rent": "KSh 35"
+    "rent": "KSh 35",
+    "house_detail": "These Go downs are available to Let along Mombasa Road\r \r Renting a 10, 000 sq ft @Shs."
   },
   {
     "location": "Karen Karen, Karen, Nairobi",
-    "rent": "KSh 50 000"
+    "rent": "KSh 50 000",
+    "house_detail": "A lovely 2 bedroom guest wing in a shared compound in karen."
   },
   {
     "location": "2 Fourth Parklands Ave, Parklands, Nairobi",
-    "rent": "KSh 125"
+    "rent": "KSh 125",
+    "house_detail": "Newly built 3bedroom apartment with execellent finishing, all ensiutes, guest and common toilets, spacious lounge with separate d."
   },
   {
     "location": "Marula Ln Karen, Karen, Nairobi",
-    "rent": "KSh 20 000"
+    "rent": "KSh 20 000",
+    "house_detail": "This beautiful studio is centrally placed in Karen."
   },
   {
     "location": "Kindaruma Rd Kilimani, Kilimani, Nairobi",
-    "rent": "KSh 55"
+    "rent": "KSh 55",
+    "house_detail": "Features\r \r Spacious 2 bedrooms master en-suite apartment for rent in Kilimani, along Kindaruma road on 5th floor\r \r - Living roo."
   },
   {
     "location": "Nairobi Nairobi County, Langata, Nairobi",
-    "rent": "KSh 45 000"
-  },
-  {
-    "location": "Nairobi Nairobi County, Langata, Nairobi",
-    "rent": "KSh 45 000"
+    "rent": "KSh 45 000",
+    "house_detail": "This gorgeous 2 bedroom master ensuite on the 1st floor in a compound of 30 units has ample vehicle parking and sufficient."
   },
   {
     "location": "Airport N Rd Embakasi, Embakasi, Nairobi",
-    "rent": "KSh 23"
+    "rent": "KSh 23",
+    "house_detail": "These Godowns are located on North Airport Road providing 12 units of 9, 000 sq."
   },
   {
     "location": "Dagoretti Rd Nairobi, Karen, Nairobi",
-    "rent": "KSh 50 000"
+    "rent": "KSh 50 000",
+    "house_detail": "2 Bedroom apartment to let in Karen\r Located along Karen/Dagoretti road is this newly built 2 bedroom apartment."
   },
   {
     "location": "Limuru Rd Nairobi, Parklands, Nairobi",
-    "rent": "KSh 100"
+    "rent": "KSh 100",
+    "house_detail": "Valley View Office Park is built for the entrepreneur."
   }
 ]
