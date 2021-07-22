@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.utils import timezone
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .models import Rental
 
 def home(request):
@@ -19,3 +19,6 @@ class HomeListView(ListView):
         context = super().get_context_data(**kwargs)
         context['now'] = timezone.now()
         return context
+
+class PostDetailView(DetailView):
+    models = Rental
