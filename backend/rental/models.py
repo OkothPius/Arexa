@@ -14,6 +14,10 @@ class Rental(models.Model):
     def __str__(self):
         return self.title
 
+class Images(models.Model):
+    post = models.ForeignKey(Rental, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='rental_posts', verbose_name='Image')
+
 class Category(models.Model):
     home = models.ManyToManyField(Rental)
 
