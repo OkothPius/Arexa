@@ -22,7 +22,7 @@ body {
   line-height: 1.6;
 }
 
-h1, 
+h1,
 h2 {
   font-weight: 300;
   line-height: 1.2;
@@ -195,6 +195,19 @@ section.info.bg-light {
     overflow: auto;
 }
 
+/* Rental */
+/* .card img {
+  height: 15vw;
+  object-fit: cover;
+} */
+.card:hover {
+  border: 1px #133337 solid;
+}
+
+.card .btn {
+  
+}
+
 /* Footer */
 .footer {
   width: 100%;
@@ -215,9 +228,3 @@ section.info.bg-light {
   color: #ffffff;
   margin-left: 10px;
 }
-
-
-
-
-
-
