@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.utils import timezone
 from django.views.generic import ListView, DetailView
-from .models import Rental
+from .models import Rental, Images
 
 def home(request):
     return render(request, 'rental/base.html')
@@ -21,4 +21,13 @@ class HomeListView(ListView):
         return context
 
 class PostDetailView(DetailView):
-    models = Rental
+    models = Rental, Images
+
+    def get_queryset(self):
+        return Rental.objects.all()
+
+    def get_context_data(self, **kwargs):
+        context = super(PostDetailView, self).get_context_data(**kwargs)
+        context['rental'] = Rental.objects.all()
+        context['images'] = Images.objects.all()
+        return context
