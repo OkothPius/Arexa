@@ -1,19 +1,24 @@
 {% extends 'rental/base.html' %}
 
 {% block content %}
-<div class="container">
-  <div class="rental my-5">
-    <h3>Apartments Available</h3>
-    <ul>
+<section class="rental bg-light">
+  <h4 class="md text-center my-2">Explore Rentals in Nairobi, Nrb</h4>
+    <div class="grid grid-4">
       {% for house in object_list %}
-        <li>{{ house.pub_date|date }} - {{ house.title }}</li>
+
+            <div class="card text-center">
+              <img src="{{ house.image.url }}" alt="">
+              <h2 class="m-2">Kshs. {{ house.price }}</h2>
+              <p>{{ house.title }} in {{ house.estate }}</p>
+              <p>Posted on {{ house.pub_date|date }}</p>
+            </div>
+
       {% empty %}
-        <li>No Apartments yet!</li>
+        <h2 class="text-center">No Apartments yet!</h2>
       {% endfor %}
-    </ul>
+    </div>
 
-  </div>
 
-</div>
+</section>
 
 {% endblock content %}
