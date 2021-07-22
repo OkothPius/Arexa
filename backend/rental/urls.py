@@ -3,6 +3,6 @@ from .views import HomeListView
 from . import views
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', views.main, name='main'),
     path('home/', HomeListView.as_view(), name='home-list'),
 ]
