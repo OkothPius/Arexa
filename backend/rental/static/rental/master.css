@@ -196,16 +196,19 @@ section.info.bg-light {
 }
 
 /* Rental */
-/* .card img {
-  height: 15vw;
-  object-fit: cover;
-} */
 .card:hover {
   border: 1px #133337 solid;
 }
 
-.card .btn {
-  
+/* Detail */
+.detail .grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr)
+}
+
+.detail .grid > *:first-child {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
 }
 
 /* Footer */
