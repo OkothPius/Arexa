@@ -1,14 +1,19 @@
 {% extends 'rental/base.html' %}
 
 {% block content %}
+<div class="container">
+  <div class="rental my-5">
+    <h3>Apartments Available</h3>
+    <ul>
+      {% for house in object_list %}
+        <li>{{ house.pub_date|date }} - {{ house.title }}</li>
+      {% empty %}
+        <li>No Apartments yet!</li>
+      {% endfor %}
+    </ul>
 
-  <h3>Apartments Available</h3>
-  <ul>
-    {% for house in object_list %}
-      <li>{{ house.pub_date|date }} - {{ house.title }}</li>
-    {% empty %}
-      <li>No Apartments yet!</li>
-    {% endfor %}
-  </ul>
+  </div>
+
+</div>
 
 {% endblock content %}
