@@ -3,12 +3,6 @@
 {% block content %}
   <section class="detail bg-light">
     <div class="grid">
-      {% for pic in rental %}
-      <div class="card">
-        <img src="{{ pic.image.url }}" alt="">
-      </div>
-      {% endfor %}
-
       {% for detail in images %}
         <div class="card">
           <img src="{{ detail.image.url }}" alt="">
@@ -16,24 +10,18 @@
       {% endfor %}
     </div>
 
-    <div class="container">
-      <div class="grid">
-        <div class="showcase-detail">
-          {% for pic in rental %}
-            <p>{{ pic.title }}</p>
-            <h2>kshs.{{ pic.price }}</h2>
-          {% endfor %}
+    <div class="hse container grid">
+      {% for hse in rental %}
+        <div class="text-center">
+          <h2 class="md">{{ hse.price }}</h2>
+          <h4>{{ hse.title }}</h4>
         </div>
 
-        <div class="card showcase-print">
-          {% for pic in rental %}
-            <p class="text-center">{{ pic.title }}</p>
-            <h2>kshs.{{ pic.price }}</h2>
-            <a href="" class="btn btn-dark">Download Info</a>
-          {% endfor %}
-        </div>
-
-      </div>
+        <div class="card text-center">
+          <h2 class="md">{{ hse.price }}</h2>
+            <h4>{{ hse.title }}</h4>
+          </div>
+      {% endfor %}
     </div>
 
   </section>
