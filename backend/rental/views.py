@@ -28,6 +28,6 @@ class PostDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(PostDetailView, self).get_context_data(**kwargs)
-        context['rental'] = Rental.objects.filter(id=1)
+        context['rental'] = Rental.objects.get(pk=id)
         context['images'] = Images.objects.all()
         return context
