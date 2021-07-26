@@ -202,13 +202,28 @@ section.info.bg-light {
 
 /* Detail */
 .detail .grid {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr)
+  grid-auto-columns: calc(25% - 3px);
+  grid-template-columns: repeat(4,calc(25% - 3px));
+  grid-template-rows: repeat(2,calc(50% - 2px));
+  gap: 4px;
+  /* grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr) */
 }
+
+.detail .card:hover {
+  border: none;
+  cursor: pointer;
+}
+
 
 .detail .grid > *:first-child {
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
+}
+
+/* hse */
+.hse .grid {
+  grid-template-columns: 4fr 3fr;
 }
 
 /* Footer */
