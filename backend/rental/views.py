@@ -1,6 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
-from django.views.generic import ListView, DetailView
+from django.views import generic
 from .models import Rental, Images
 
 def home(request):
@@ -10,7 +10,7 @@ def main(request):
     return render(request, 'rental/main.html')
 
 
-class HomeListView(ListView):
+class HomeListView(generic.ListView):
 
     models = Rental
     queryset = Rental.objects.all()
@@ -20,7 +20,7 @@ class HomeListView(ListView):
         context['now'] = timezone.now()
         return context
 
-class PostDetailView(DetailView):
+class PostDetailView(generic.DetailView):
     models = Rental, Images
 
     def get_queryset(self):
@@ -28,6 +28,5 @@ class PostDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super(PostDetailView, self).get_context_data(**kwargs)
-        context['rental'] = Rental.objects.get(pk=id)
-        context['images'] = Images.objects.all()
+        context['images'] = Images.objects.filter(pk=self.object.id)
         return context
