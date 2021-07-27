@@ -11,17 +11,15 @@
     </div>
 
     <div class="hse container grid">
-      {% for hse in rental %}
         <div class="text-center">
-          <h2 class="md">{{ hse.price }}</h2>
-          <h4>{{ hse.title }}</h4>
+          <h2 class="md">{{ object.price }}</h2>
+          <h4>{{ object.title }}</h4>
         </div>
 
         <div class="card text-center">
-          <h2 class="md">{{ hse.price }}</h2>
-            <h4>{{ hse.title }}</h4>
+          <h2 class="md">{{ object.price }}</h2>
+            <h4>{{ object.title }}</h4>
           </div>
-      {% endfor %}
     </div>
 
   </section>
