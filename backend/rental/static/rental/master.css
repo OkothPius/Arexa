@@ -224,6 +224,12 @@ section.info.bg-light {
 /* hse */
 .hse .grid {
   grid-template-columns: 4fr 3fr;
+  margin-top: 10%;
+}
+
+/* Download */
+.download {
+  margin-top: 20px;
 }
 
 /* Footer */
