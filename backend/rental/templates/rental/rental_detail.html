@@ -3,11 +3,11 @@
 {% block content %}
   <section class="detail bg-light">
     <div class="grid">
-      {% for detail in images %}
-        <div class="card">
-          <img src="{{ detail.image.url }}" alt="">
-        </div>
-      {% endfor %}
+        {% for detail in images %}
+          <div class="card">
+            <img src="{{ detail.image.url }}" alt="">
+          </div>
+        {% endfor %}
     </div>
 
     <div class="hse container grid">
