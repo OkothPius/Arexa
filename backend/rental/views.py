@@ -30,3 +30,16 @@ class PostDetailView(generic.DetailView):
         context = super(PostDetailView, self).get_context_data(**kwargs)
         context['images'] = Images.objects.all()
         return context
+
+
+class SearchView(generic.TemplateView):
+    template_name = 'search.html'
+    models = Rental
+
+    def get_queryset(self):
+        return Rental.objects.all()
+
+    def get_context_data(self, **kwargs):
+        context = super(PostDetailView, self).get_context_data(**kwargs)
+        context['search'] = Rental.objects.filter()
+        return context
