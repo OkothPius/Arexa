@@ -15,7 +15,7 @@
           <div class="card text-center">
             <img src="{{ house.image.url }}" alt="">
             <h2 class="m-2">Kshs. {{ house.price }}</h2>
-            <p><a href="{% url 'post-detail' house.id %}">{{ house.title }} in {{ house.estate }}</a></p>
+            <p><a href="{% url 'rental:post-detail' house.id %}">{{ house.title }} in {{ house.estate }}</a></p>
             <p>Posted on {{ house.pub_date|date }}</p>
           </div>
 

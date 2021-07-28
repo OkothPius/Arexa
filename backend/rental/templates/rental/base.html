@@ -15,9 +15,9 @@
   <main class="content">
       <nav>
         <ul class="right">
-          <li><a href="{% url 'main' %}">Home</a></li>
+          <li><a href="{% url 'rental:main' %}">Home</a></li>
           <li><a href="#">Buy</a></li>
-          <li><a href="{% url 'home-list' %}">Rent</a></li>
+          <li><a href="{% url 'rental:home-list' %}">Rent</a></li>
           <li><a href="#">Sell</a></li>
           <li><a href="#">Agent Finder</a></li>
         </ul>
@@ -43,13 +43,8 @@
         <img src="/static/rental/logo.jpg" alt="logo">
       </div>
 
-
     <!-- Information -->
       {% block content %} {% endblock content %}
-
-
-
-
 
     <!-- Footer -->
     <footer class="footer bg-dark py-5">
