@@ -1,19 +1,21 @@
 {% extends 'rental/base.html' %}
 
-{% block element %}
+{% block content %}
+<div class="container">
+    <h2 class="md text-center my-2">Search Results for {{request.GET.keyword}}</h2>
+</div>
+<hr>
+
 <div class="grid grid-4">
-  <h3 class="text-center">Search results for {{name}}</h3>
-  <!-- {% for house in object_list %}
-
+  {% for result in results %}
         <div class="card text-center">
-          <img src="{{ house.image.url }}" alt="">
-          <h2 class="m-2">Kshs. {{ house.price }}</h2>
-          <p><a href="{% url 'post-detail' house.id %}">{{ house.title }} in {{ house.estate }}</a></p>
-          <p>Posted on {{ house.pub_date|date }}</p>
+          <img src="{{ result.image.url }}" alt="">
+          <h2 class="m-2">Kshs. {{ result.price }}</h2>
+          <p><a href="{% url 'rental:post-detail' result.id %}">{{ result.title }} in {{ result.estate }}</a></p>
+          <p>Posted on {{ result.pub_date|date }}</p>
         </div>
-
   {% empty %}
     <h2 class="text-center">No Apartments yet!</h2>
-  {% endfor %} -->
+  {% endfor %}
 </div>
 {% endblock %}
