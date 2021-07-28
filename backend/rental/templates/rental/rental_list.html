@@ -2,21 +2,27 @@
 
 {% block content %}
 <section class="rental bg-light">
+
   <h4 class="md text-center my-2">Explore Rentals in Nairobi, Nrb</h4>
-    <div class="grid grid-4">
-      {% for house in object_list %}
+  <form class="example" action="{% url 'rental:search' %}" method="GET">
+    <input type="text" name="keyword" placeholder="Search by Location" value="" required>
+    <input type="submit" name="" value="Search">
+  </form>
 
-            <div class="card text-center">
-              <img src="{{ house.image.url }}" alt="">
-              <h2 class="m-2">Kshs. {{ house.price }}</h2>
-              <p><a href="{% url 'post-detail' house.id %}">{{ house.title }} in {{ house.estate }}</a></p>
-              <p>Posted on {{ house.pub_date|date }}</p>
-            </div>
+  <div class="grid grid-4">
+    {% for house in object_list %}
 
-      {% empty %}
-        <h2 class="text-center">No Apartments yet!</h2>
-      {% endfor %}
-    </div>
+          <div class="card text-center">
+            <img src="{{ house.image.url }}" alt="">
+            <h2 class="m-2">Kshs. {{ house.price }}</h2>
+            <p><a href="{% url 'post-detail' house.id %}">{{ house.title }} in {{ house.estate }}</a></p>
+            <p>Posted on {{ house.pub_date|date }}</p>
+          </div>
+
+    {% empty %}
+      <h2 class="text-center">No Apartments yet!</h2>
+    {% endfor %}
+  </div>
 
 
 </section>
