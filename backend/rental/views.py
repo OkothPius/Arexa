@@ -6,8 +6,11 @@ from .models import Rental, Images
 def home(request):
     return render(request, 'rental/base.html')
 
-def main(request):
-    return render(request, 'rental/main.html')
+# def main(request):
+#     return render(request, 'rental/main.html')
+
+class MainView(generic.TemplateView):
+    template_name = 'rental/main.html'
 
 
 class HomeListView(generic.ListView):
@@ -33,7 +36,7 @@ class PostDetailView(generic.DetailView):
 
 
 class SearchView(generic.TemplateView):
-    template_name = 'search.html'
+    template_name = 'rental/search.html'
     models = Rental
 
     def get_queryset(self):
