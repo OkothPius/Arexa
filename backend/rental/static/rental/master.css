@@ -77,6 +77,10 @@ nav .right {
   float: left;
 }
 
+nav ul a .fa {
+  color: #333333;
+}
+
 /* Logo */
 #logo img {
   display: block;
@@ -134,15 +138,6 @@ h1 {
   text-align: center;
   font-weight: bold;
   padding-top: 30px;
-}
-
-.box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 500px;
-  transform: translate(-50%, -50%);
-  padding-bottom: 20%;
 }
 
 input {
@@ -221,6 +216,10 @@ section.info.bg-light {
   grid-row: 1 / span 2;
 }
 
+.example {
+  margin-left: 36%;
+}
+
 /* hse */
 .hse .grid {
   grid-template-columns: 4fr 3fr;
@@ -230,6 +229,7 @@ section.info.bg-light {
 /* Download */
 .download {
   margin-top: 20px;
+  z-index: 1;
 }
 
 /* Users app */
