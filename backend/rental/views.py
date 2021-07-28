@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from django.views import generic
+from django.db.models import Q
 from .models import Rental, Images
 
 def home(request):
@@ -43,6 +44,10 @@ class SearchView(generic.TemplateView):
         return Rental.objects.all()
 
     def get_context_data(self, **kwargs):
-        context = super(PostDetailView, self).get_context_data(**kwargs)
-        context['search'] = Rental.objects.filter()
+        context = super().get_context_data(**kwargs)
+        kw = self.request.GET.get('keyword')
+        results = Rental.objects.filter(
+            Q(estate__icontains=kw) | Q(title__icontains=kw) | Q(price__icontains=kw))
+        print('results')
+        context['results'] = results
         return context
