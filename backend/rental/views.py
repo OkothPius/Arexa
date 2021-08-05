@@ -2,7 +2,8 @@ from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from django.views import generic
 from django.db.models import Q
-from .models import Rental, Images
+from .models import Rental, Images, Profile
+from .render import Render
 
 def home(request):
     return render(request, 'rental/base.html')
@@ -51,3 +52,16 @@ class SearchView(generic.TemplateView):
         print('results')
         context['results'] = results
         return context
+
+
+class PdfView(generic.TemplateView):
+
+    def get(self, request):
+        rental = Rental.objects.all()
+        today = timezone.now()
+        params = {
+            'today': today,
+            'rental': rental,
+            'request': request
+        }
+        return Render.render('rental/pdf.html', params)
