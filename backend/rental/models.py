@@ -6,6 +6,7 @@ class Rental(models.Model):
     title = models.CharField(max_length=100)
     image = models.ImageField(upload_to='images/')
     price = models.PositiveIntegerField()
+    house_detail = models.TextField(default='Full Furnished')
     pub_date = models.DateField()
     estate = models.CharField(max_length=100)
 
