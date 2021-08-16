@@ -277,6 +277,10 @@ a.article-title:hover {
   vertical-align: middle;
 }
 
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
 .account-img {
   height: 125px;
   width: 125px;
@@ -286,6 +290,12 @@ a.article-title:hover {
 
 .account-heading {
   font-size: 2.5rem;
+}
+
+/* Login */
+.login .card:hover {
+  border: none;
+  outline: none;
 }
 
 /* Footer */
