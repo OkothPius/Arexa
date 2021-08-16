@@ -2,7 +2,6 @@ from django.urls import path
 from .views import HomeListView, PostDetailView, SearchView, MainView, PdfView
 from . import views
 
-app_name = 'rental'
 
 urlpatterns = [
     path('', MainView.as_view(), name='main'),
