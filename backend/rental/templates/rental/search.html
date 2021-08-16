@@ -11,7 +11,7 @@
         <div class="card text-center">
           <img src="{{ result.image.url }}" alt="">
           <h2 class="m-2">Kshs. {{ result.price }}</h2>
-          <p><a href="{% url 'rental:post-detail' result.id %}">{{ result.title }} in {{ result.estate }}</a></p>
+          <p><a href="{% url 'post-detail' result.id %}">{{ result.title }} in {{ result.estate }}</a></p>
           <p>Posted on {{ result.pub_date|date }}</p>
         </div>
   {% empty %}
