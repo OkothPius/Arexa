@@ -8,9 +8,6 @@ from .render import Render
 def home(request):
     return render(request, 'rental/base.html')
 
-# def main(request):
-#     return render(request, 'rental/main.html')
-
 class MainView(generic.TemplateView):
     template_name = 'rental/main.html'
 
