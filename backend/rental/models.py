@@ -36,7 +36,6 @@ class Images(models.Model):
     post = models.ForeignKey(Rental, on_delete=models.CASCADE)
     image = models.ImageField(upload_to='rental_posts')
 
-
     def __str__(self):
         return str(self.head)
 

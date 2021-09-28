@@ -11,7 +11,6 @@ def home(request):
 class MainView(generic.TemplateView):
     template_name = 'rental/main.html'
 
-
 class HomeListView(generic.ListView):
 
     models = Rental
@@ -34,7 +33,6 @@ class PostDetailView(generic.DetailView):
         context['images'] = Images.objects.all()
         return context
 
-
 class SearchView(generic.TemplateView):
     template_name = 'rental/search.html'
     models = Rental
@@ -50,7 +48,6 @@ class SearchView(generic.TemplateView):
         print('results')
         context['results'] = results
         return context
-
 
 class PdfView(generic.TemplateView):
 
