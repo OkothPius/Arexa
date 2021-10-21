@@ -67,12 +67,18 @@ def report_module(request):
     textob.setTextOrigin(inch, inch)
     textob.setFont("Helvetica", 14)
 
-    # Add some lines of text
-    lines = [
-        "This is line 1",
-        "This is line 2",
-        "This is line 3",
-    ]
+    # Designate the model
+    houses = Rental.objects.all()
+
+    # Create a blank list
+    lines = []
+    for house in houses:
+        lines.append(house.title)
+        lines.append(house.price)
+        lines.append(house.house_detail)
+        lines.append(house.pub_date)
+        lines.append(house.estate)
+        lines.append(" ")
 
     # Loop
     for line in lines:
