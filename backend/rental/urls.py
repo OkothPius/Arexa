@@ -8,4 +8,5 @@ urlpatterns = [
     path('rental/<int:pk>/', PostDetailView.as_view(), name='post-detail'),
     path('search/', SearchView.as_view(), name='search'),
     path('download/', PdfView.as_view(), name='download'),
+    path('house_pdf/', views.report_module, name='report'),
 ]
