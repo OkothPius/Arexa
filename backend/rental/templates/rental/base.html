@@ -17,10 +17,10 @@
       <nav>
         <ul class="right">
           <li><a href="{% url 'main' %}">Home</a></li>
-          <li><a href="#">Buy</a></li>
+          <!-- <li><a href="#">Buy</a></li> -->
           <li><a href="{% url 'home-list' %}">Rent</a></li>
-          <li><a href="#">Sell</a></li>
-          <li><a href="#">Agent Finder</a></li>
+          <li><a href="{% url 'rental_list'%}">Sell/Buy</a></li>
+          <!-- <li><a href="#">Agent Finder</a></li> -->
         </ul>
 
 
@@ -29,8 +29,8 @@
             <li><a href="{% url 'profile' %}">Profile</a></li>
             <li><a href="{% url 'logout' %}">Logout</a></li>
             <li><a href="#">Help</a></li>
-            <li><a href="#">Advertise</a></li>
             <li><a href="#">Manage Rentals</a></li>
+            <li><a href="{% url 'rental_create_new'%}">Create Rental</a></li>
           {% else %}
             <li><a href="{% url 'login' %}">Sign In</a> </li>
             <li><a href="{% url 'register' %}">Register</a> </li>

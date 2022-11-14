@@ -1,0 +1,25 @@
+{% extends 'rental/base.html' %}
+
+{% block content %}
+<section class="rental bg-light">
+  <div class="grid grid-4">
+    {% for house in rentals %}
+
+          <div class="card text-center">
+            <img src="{{ house.image.url }}" alt="">
+            <h2 class="m-2">Kshs. {{ house.price }}</h2>
+            <p><a href="{% url 'post-detail' house.id %}">{{ house.title }}</a></p>
+            <p>Posted on {{ house.pub_date|date }}</p>
+            <p>Price: Kshs.{{ house.price}}</p>
+          </div>
+
+    {% empty %}
+      <h2 class="text-center">No Apartments yet!</h2>
+    {% endfor %}
+
+  </div>
+
+
+</section>
+
+{% endblock content %}
