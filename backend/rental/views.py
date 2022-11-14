@@ -10,6 +10,9 @@ from django.http import FileResponse
 from reportlab.pdfgen import canvas
 from reportlab.lib.units import inch
 from reportlab.lib.pagesizes import letter
+from django.contrib.messages.views import SuccessMessageMixin
+from django.views.generic import ListView, CreateView, UpdateView
+
 
 def home(request):
     return render(request, 'rental/base.html')
@@ -27,6 +30,24 @@ class HomeListView(generic.ListView):
         context = super().get_context_data(**kwargs)
         context['now'] = timezone.now()
         return context
+
+class RentalCreateView(SuccessMessageMixin, CreateView):
+    success_message='Your rent has been created!'
+    template_name = 'rental/rental_form.html'
+    model = Rental
+    fields = ['title', 'image', 'price','house_detail', 'estate']
+
+    #Uses the current user as the owner of posts created
+    def form_valid(self, form):
+        form.instance.owner = self.request.user
+        return super().form_valid(form)
+
+class RentalListView(ListView):
+    model = Rental
+    template_name = 'rental/rental_sale.html'
+    context_object_name = 'rentals'
+    ordering = ['-pub_date']
+    paginate_by = 20
 
 class PostDetailView(generic.DetailView):
     models = Rental, Images

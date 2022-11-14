@@ -1,5 +1,8 @@
 from django.urls import path
-from .views import HomeListView, PostDetailView, SearchView, MainView, PdfView
+from .views import (
+            HomeListView, PostDetailView, RentalListView,
+            SearchView, MainView, PdfView, RentalCreateView
+            )
 from . import views
 
 urlpatterns = [
@@ -9,4 +12,6 @@ urlpatterns = [
     path('search/', SearchView.as_view(), name='search'),
     path('download/', PdfView.as_view(), name='download'),
     path('house_pdf/', views.report_module, name='report'),
+    path('rental/new/',RentalCreateView.as_view(), name='rental_create_new'),
+    path('rental/sale/',RentalListView.as_view(), name='rental_list'), 
 ]

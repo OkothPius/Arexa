@@ -9,7 +9,7 @@ class Rental(models.Model):
     image = models.ImageField(upload_to='images/')
     price = models.IntegerField()
     house_detail = models.TextField(default='Full Furnished')
-    pub_date = models.DateTimeField('date published')
+    pub_date = models.DateTimeField('date published', auto_now_add=True)
     estate = models.CharField(max_length=100)
 
     class Meta:
